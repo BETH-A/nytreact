@@ -1,1 +1,1 @@
-# nytreact
+Server README
