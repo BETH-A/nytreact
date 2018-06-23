@@ -1,8 +1,11 @@
 import React from "react";
 
-const Jumbotron = ({ children }) =>
-  <div style={{ height: 300 }} className="jumbotron">
+const Jumbotron = ({ children }) => (
+  <div
+    style={{ height: 100, clear: "both", paddingTop: 18, textAlign: "center" }}
+    className="jumbotron" >
     {children}
-  </div>;
+  </div>
+);
 
 export default Jumbotron;
