@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import DeleteBtn from "../../components/DeleteBtn";
-import SaveBtn from "../../components/SaveBtn";
-
-import Jumbotron from "../components/Jumbotron";
+import SaveBtn from "../../components/SavBtn";
+import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
@@ -23,7 +22,7 @@ class Home extends Component {
 
   componentDidMount() {
     this.loadArticles();
-    this.getOnlineNYTArticles("Trump", "20170101", "20180101");
+    this.getOnlineNYTArticles("Program Coding", "20180101", "20180630");
   }
 
   getOnlineNYTArticles(topic, from, to){

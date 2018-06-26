@@ -1,10 +1,6 @@
 {
-  "name": "mern",
+  "name": "reactnytimesscrubber",
   "version": "1.0.0",
-  "engines": {
-    "npm": "6.1.0",
-    "node": "v8.9.4"
-  },
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -12,8 +8,9 @@
     "client": "node scripts/start-client.js",
     "start": "concurrently \"nodemon server.js\" \"npm run client\"",
     "build": "node scripts/build.js",
-    "seed": "node scripts/seedDB.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "seedNews": "node scripts/seedNews.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
   },
   "author": "",
   "license": "ISC",
@@ -25,7 +22,8 @@
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "mongoose": "^4.11.7",
-    "react-router-dom": "^4.1.2"
+    "moment": "^2.22.1",
+    "mongoose": "^5.0.11",
+    "npm": "^6.1.0"
   }
 }
