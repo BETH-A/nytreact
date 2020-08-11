@@ -22,7 +22,7 @@ class Home extends Component {
 
   componentDidMount() {
     this.loadArticles();
-    this.getOnlineNYTArticles("Program Coding", "20180101", "20180630");
+    this.getOnlineNYTArticles("Program Coding", "20200101", "20200630");
   }
 
   getOnlineNYTArticles(topic, from, to){
